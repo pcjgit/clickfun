@@ -28,7 +28,9 @@ function App() {
 
   return (
     <div className="container">
-      <h1>Happy Birthday to My Dear! Should we go out together?</h1>
+      <h1>
+        Happy Birthday to My Dear!<br /> Should we go out together?
+      </h1>
 
       {!celebrated && (
         <div className="button-container">
