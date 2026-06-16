@@ -3,18 +3,17 @@ import confetti from 'canvas-confetti'
 import './App.css'
 
 function App() {
-  const [yesPos, setYesPos] = useState({ top: '50%', left: '40%' })
-  const [noPos, setNoPos] = useState({ top: '50%', left: '60%' })
+  const [yesPos, setYesPos] = useState({ top: '45%', left: '50%' })
+  const [noPos, setNoPos] = useState({ top: '55%', left: '50%' })
   const [celebrated, setCelebrated] = useState(false)
 
   const moveButtons = () => {
-    const newYesTop = Math.random() * 80 + 10 + '%'
-    const newYesLeft = Math.random() * 80 + 10 + '%'
-    const newNoTop = Math.random() * 80 + 10 + '%'
-    const newNoLeft = Math.random() * 80 + 10 + '%'
+    const newLeft = Math.random() * 60 + 20 + '%'
+    const newYesTop = Math.random() * 35 + 10 + '%'
+    const newNoTop = Math.random() * 35 + 55 + '%'
 
-    setYesPos({ top: newYesTop, left: newYesLeft })
-    setNoPos({ top: newNoTop, left: newNoLeft })
+    setYesPos({ top: newYesTop, left: newLeft })
+    setNoPos({ top: newNoTop, left: newLeft })
   }
 
   const handleYes = () => {
